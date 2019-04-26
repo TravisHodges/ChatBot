@@ -2,9 +2,8 @@ import java.util.Scanner;
 import java.util.ArrayList;
 public class Main
 {
-    private static Object displayGreetings;
 
-    public static void main(String[] args)
+    public static void main(String[] args) throws InterruptedException
     {
 
         Scanner input = new Scanner(System.in);
@@ -12,12 +11,37 @@ public class Main
             "a bunch of stuff to say!");
         System.out.println("Because of the 'restrictions' there are keywords to engage in a conversation with me. These keywords are:");
         System.out.println("Hi, Tell me something, What do you want to talk about? (What do you want to talk about is a question for me, not you).");
-        String Hi = null;
     String userChoice;
     userChoice = input.nextLine();
-    if (userChoice == Hi)
+    if (userChoice.equalsIgnoreCase("Hi"))
         {
-            Object displayGreetings = Main.displayGreetings;
+            Greetings Greetings = new Greetings();
+            Greetings.greetings();
+        }
+        else if (userChoice.equalsIgnoreCase("Tell me something"))
+        {
+            System.out.println("I have 3 topics to share, choose one!");
+            int compliments = 1;
+            int jokes = 2;
+            int randfacts = 3;
+            int userChoiceint;
+            userChoiceint = input.nextInt();
+            if (userChoiceint == 1)
+            {
+                Compliments.compliments();
+            }
+            else if (userChoiceint == 2)
+            {
+                Jokes.jokes();
+            }
+            else if (userChoiceint == 3)
+            {
+                RandomFacts.randfacts();
+            }
+        }
+        else if (userChoice.equalsIgnoreCase("What do you want to talk about?"))
+        {
+
         }
     }
 }

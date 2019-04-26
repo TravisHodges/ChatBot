@@ -1,26 +1,22 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.Random;
 public class Greetings
 {
-public static void main()
+public static void greetings()
 {
-    Scanner input = new Scanner(System.in);
-    System.out.println();
 
-    ArrayList<String> Greetings = new ArrayList<String>();
-    for (int j = 0; j < 6; j++)
+    for (int j = 0; j < 1; j++)
     {
+//       ArrayList<String> Greetings = new ArrayList<String>();
        Random rand = new Random();
        int n = rand.nextInt(6);
-       n += 1;
        if (n == 1)
        {
         System.out.println("Hello!");
        }
        else if (n == 2)
        {
-        System.out.println("Heyyyyy ;) (Is that how humans attract mates? Weird!");
+        System.out.println("Heyyyyy ;) (Is that how humans attract mates? Weird!)");
        }
        else if (n == 3)
        {
@@ -40,7 +36,7 @@ public static void main()
        }
        else
            {
-               System.out.println("That isn't one of the programmed words, but I'll acknowledge that you spoke to me. :)");
+               System.out.println("Good Morning, Evening, Afternoon, or whatever your current time is!");
            }
     }
 
