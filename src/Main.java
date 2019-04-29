@@ -13,6 +13,7 @@ public class Main
         System.out.println("Hi, Tell me something, What do you want to talk about? (What do you want to talk about is a question for me, not you).");
     String userChoice;
     userChoice = input.nextLine();
+
     if (userChoice.equalsIgnoreCase("Hi"))
         {
             Greetings Greetings = new Greetings();
@@ -38,7 +39,7 @@ public class Main
         }
         else if (userChoice.equalsIgnoreCase("What do you want to talk about?"))
         {
-
+            rttta.rttta();
         }
     }
 }
