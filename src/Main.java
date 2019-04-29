@@ -21,9 +21,6 @@ public class Main
         else if (userChoice.equalsIgnoreCase("Tell me something"))
         {
             System.out.println("I have 3 topics to share, choose one!");
-            int compliments = 1;
-            int jokes = 2;
-            int randfacts = 3;
             int userChoiceint;
             userChoiceint = input.nextInt();
             if (userChoiceint == 1)
