@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 public class RandomFacts
 {
-    public static void randfacts() throws InterruptedException
+    public static void randfacts()
     {
 
         Scanner input = new Scanner(System.in);
