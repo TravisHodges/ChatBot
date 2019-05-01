@@ -37,7 +37,8 @@ public class Main
                 RandomFacts.randfacts();
             }
         }
-        else if (userChoice.equalsIgnoreCase("What do you want to talk about?"))
+        else if (userChoice.equalsIgnoreCase("What do you want to talk about?") ||
+            userChoice.equalsIgnoreCase("What do you want to talk about"))
         {
             rttta.rttta();
         }
