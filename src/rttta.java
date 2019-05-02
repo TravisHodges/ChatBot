@@ -4,10 +4,10 @@ public class rttta
 {
     public static void rttta() throws InterruptedException
     {
+
         Scanner input = new Scanner(System.in);
         System.out.println("Well, I have a couple different ideas in mind:");
         System.out.println("The weather" +
-                            "\nCurrent events" +
                             "\nFood" +
                             "\nLet's play a game");
         String userChoice;
@@ -16,7 +16,9 @@ public class rttta
         {
             System.out.println("How is the weather looking today? The weather is:" +
                     "\nrainy" +
-                    "\nsunny");
+                    "\nsunny" +
+                    "\ncloudy" +
+                    "\nfoggy");
             userChoice = input.nextLine();
             if (userChoice.equalsIgnoreCase("The weather is rainy"))
             {
@@ -35,6 +37,16 @@ public class rttta
             else if (userChoice.equalsIgnoreCase("The weather is foggy"))
             {
                 System.out.println("Don't get lost out there! Maybe Akira Yamaoka can be your guide, he he.");
+            }
+        }
+        else if (userChoice.equalsIgnoreCase("food"))
+        {
+            System.out.println("What kind of food do you enjoy?");
+            System.out.println("There is dry food, canned food, greasy food, and sweets (from what I have gathered.)");
+            userChoice = input.nextLine();
+            if (userChoice.equalsIgnoreCase("Dry food"))
+            {
+                System.out.println("This is animal food, silly!");
             }
         }
         else if (userChoice.equalsIgnoreCase("Let's play a game"))
