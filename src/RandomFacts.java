@@ -37,69 +37,24 @@ public class RandomFacts
         facts[18] = "A dragonfly has a lifespan of 24 hours. ";
         facts[19] = "In the original version of Cinderella the slipper was made out of fur, not glass! ";
 
-
-
-        int x = 1;
-
-        if (userInput == 1){
+        if (userInput == 1)
+        {
             System.out.println("");
-            System.out.println("Your Random Fact: ");
+            System.out.println("Your random fact: ");
             System.out.println("");
 
-            while (x <= 1) {
-                Random rand = new Random();
-                int computerChoice = rand.nextInt(20);
+            Random rand = new Random();
+            int computerChoice = rand.nextInt(facts.length);
 
-                if (computerChoice == 0) {
-                    System.out.println(facts[0]);
-                } else if (computerChoice == 1) {
-                    System.out.println(facts[1]);
-                } else if (computerChoice == 2) {
-                    System.out.println(facts[2]);
-                } else if (computerChoice == 3) {
-                    System.out.println(facts[3]);
-                } else if (computerChoice == 4) {
-                    System.out.println(facts[4]);
-                } else if (computerChoice == 5) {
-                    System.out.println(facts[5]);
-                } else if (computerChoice == 6) {
-                    System.out.println(facts[6]);
-                } else if (computerChoice == 7) {
-                    System.out.println(facts[7]);
-                } else if (computerChoice == 8) {
-                    System.out.println(facts[8]);
-                } else if (computerChoice == 9) {
-                    System.out.println(facts[9]);
-                } else if (computerChoice == 10) {
-                    System.out.println(facts[10]);
-                } else if (computerChoice == 11) {
-                    System.out.println(facts[11]);
-                } else if (computerChoice == 12) {
-                    System.out.println(facts[12]);
-                } else if (computerChoice == 13) {
-                    System.out.println(facts[13]);
-                } else if (computerChoice == 14) {
-                    System.out.println(facts[14]);
-                } else if (computerChoice == 15) {
-                    System.out.println(facts[15]);
-                } else if (computerChoice == 16) {
-                    System.out.println(facts[16]);
-                } else if (computerChoice == 17) {
-                    System.out.println(facts[17]);
-                } else if (computerChoice == 18) {
-                    System.out.println(facts[18]);
-                } else if (computerChoice == 19) {
-                    System.out.println(facts[19]);
-                }
-
-                x++;
-            }
+            System.out.println(facts[computerChoice]);
         }
+
         else if (userInput != 1)
         {
             System.out.println("");
             System.out.println("Have a good day anyway. ");
         }
+
     }
 
 }
